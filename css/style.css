@@ -15,8 +15,11 @@ a {
     text-decoration: none;
 }
 
-body {
+.container {
     overflow-x: hidden;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -220,13 +223,16 @@ footer {
 }
 
 .f-bot {
-    height: 50px;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: flex-end;
-    padding: 0px 40px 0px 40px;
+    padding: 10px 40px 10px 40px;
     background: var(--darkRed);
+}
+
+#mobile {
+    display: none;
 }
 
 .f-top ul li {
@@ -244,7 +250,7 @@ footer {
 }
 
 .f-top {
-    height: 250px;
+    padding: 60px 0px 60px 0px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -254,6 +260,33 @@ footer {
 .f-top p {
     margin-top: 0px;
     padding-top: 0px;
+}
+
+.resp {
+    display: none;
+    position: fixed;
+    z-index: 998;
+    background: var(--red);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    left: 0;
+}
+
+.resp ul li {
+    padding: 30px 0px 30px 0px;
+    color: white;
+    list-style: none;
+    font-size: 24px;
+}
+
+.r-ins {
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .ft-grid {
@@ -270,4 +303,86 @@ footer {
 
 .f-top img:nth-child(1) {
     padding: 0px 5px 0px 0px;
+}
+
+@media only screen and (max-width: 775px) {
+
+    #mobile {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
+    }
+    
+    .intro .i-right {
+        display: none;
+    }
+
+    .intro {
+        display: block;
+    }
+
+    .il-ins {
+        padding-bottom: 40px;
+    }
+
+    .about {
+        margin-right: 60px;
+        display: block;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .break {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .break img {
+        display: none;
+    }
+
+    .prod {
+        display: block;
+    }
+
+    .prod img {
+        display: none;
+    }
+
+    .ft-grid {
+        display: block;
+    }
+
+    header nav {
+        padding: 0px 30px 0px 40px;
+    }
+
+    .intro {
+        padding: 
+    }
+
+    .f-top {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .ft-grid > div {
+        margin: 30px 0px 30px 0px;
+    }
+
+    .intro .i-left {
+        display: flex;
+        align-content: center;
+        padding: 0px 0px 0px 40px;
+        align-items: center;
+    }
+}
+
+.mn {
+    z-index: 999;
 }
